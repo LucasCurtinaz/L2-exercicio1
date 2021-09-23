@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <div>
+      <select type="select" id="boxSelect">
+        <option value="boxes1" selected>Conjunto 1</option>
+        <option value="boxes2">Conjunto 2</option>
+        <option value="boxes3">Conjunto 3</option>
+      </select>
+      <button onclick="boxSelect()">Selecionar</button>
+      <button onclick="showResult()">Calcular</button>
+      <h2>Altura x Largura x Comprimento (medidas em centímetros)</h2>
+      <h2 id="selectedGroup"></h2>
+      <h2 id="result"></h2>
+      <h2>Caixa 1: 30 40 80, Caixa 2: 80 50 40, Caixa 3: 50 80 60</h2>
+      <button onclick="calculateBox()">Calcular a melhor caixa</button>
+      <h2 id="calculateBoxResult"></h2>
+    </div>
+  </body>
+</html>
